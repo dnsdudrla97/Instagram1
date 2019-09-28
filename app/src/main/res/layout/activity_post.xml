@@ -47,42 +47,18 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
+        android:id="@+id/post_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:orientation="vertical"
         android:padding="8dp">
 
-
-        <!--        <GridView-->
-        <!--            xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--            android:id="@+id/gridview"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:numColumns="5"-->
-        <!--            android:gravity="center"/>-->
-
-        <!--        android:numColumns="5"-->
-
-        <!--        <ImageView-->
-        <!--            android:id="@+id/image_added"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="450dp"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:scaleType="centerCrop"-->
-        <!--            android:src="@drawable/test_1" />-->
-
         <LinearLayout
+            android:id="@+id/post_picture_area"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <ScrollView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scrollbars="none"
-                android:layout_weight="1">
+            android:orientation="horizontal">
 
                 <TableLayout
                     android:layout_width="match_parent"
@@ -150,12 +126,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_span="2"
-                            android:scaleType="center"
-                            android:stretchColumns="1"
-                            tools:src="@color/design_default_color_primary_dark" />
+                            tools:src="@tools:sample/avatars" />
                     </TableRow>
                 </TableLayout>
-            </ScrollView>
+
 
         </LinearLayout>
         <EditText
@@ -165,21 +139,17 @@
             android:layout_marginTop="15dp"
             android:hint="설명을 써주세요"
             android:maxLines="300"
-            android:textColorHighlight="#00FFFFFF"
-            android:textColorLink="#00999797"
             android:textSize="20sp" />
 
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/bottom"
+        android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="145dp"
         android:background="#FFF"
         android:padding="4dp">
-
-
 
         <EditText
             android:id="@+id/add_comment"
@@ -206,6 +176,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="5dp"
+            android:textSize="16sp"
             android:text="게시"
             android:textColor="@color/colorPrimary" />
 
